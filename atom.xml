@@ -1,0 +1,28 @@
+---
+layout: nil
+baseurl: http://brett.stimmerman.com
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Brett Stimmerman</title>
+  <link href="{{ page.baseurl }}"/>
+  <link href="{{ page.baseurl }}/atom.xml" rel="self"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ page.baseurl }}</id>
+  <author>
+    <name>Brett Stimmerman</name>
+    <email>brettstimmerman@gmail.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>{{ page.baseurl }}{{ post.id }}</id>
+    <title>{{ post.title }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <link href="{{ page.baseurl }}{{ post.url }}"/>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>

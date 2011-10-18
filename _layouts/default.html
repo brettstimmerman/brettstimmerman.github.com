@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=0.8">
+
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  <link rel="stylesheet" href="/css/screen.css" type="text/css"
+    media="screen, projection" />
+  
+  <link rel="alternate" type="application/atom+xml"
+    href="http://feeds.feedburner.com/brettstimmerman"/>
+</head>
+<body>
+  <div class="main">
+    <div class="hd">
+      <h2 class="title">
+        <a href="/" rel="home">Brett Stimmerman</a>
+      </h2>
+      
+      <div class="nav">
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+    
+    {{ content }}
+    
+    <div class="footer">
+      <hr />
+      <p>
+        Copyright &copy; 1999 - {{ site.time | date: '%Y' }}
+        <a href="mailto:brettstimmerman@gmail.com">Brett Stimmerman</a>.
+        I sometimes <a href="http://twitter.com/bretts">tweet</a> and
+        <a href="http://github.com/brettstimmerman">code</a>.
+      </p>
+      
+      <a href="http://feeds.feedburner.com/brettstimmerman"
+        title="Subscribe to the Atom feed"><img src="/images/rss.png" /></a>
+    </div>
+    
+  </div>
+</body>
+</html>
