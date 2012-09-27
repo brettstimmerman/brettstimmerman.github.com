@@ -46,7 +46,7 @@ p code {
 .hd .title { margin-right: 2em; }
 
 .main {
-  margin: 0 3em;
+  margin: 0 auto;
   padding: 2em 0 1.5em;
   max-width: 40em;
   min-width: 320px;
