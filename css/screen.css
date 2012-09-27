@@ -183,7 +183,7 @@ p code {
 }
 
 .rss { opacity: .45; }
-.rss:hover { opacity: .8; }
+.rss:hover { opacity: 1; }
 
 .subtitle { font-size: 24px; }
 .centered { text-align: center; }
