@@ -75,8 +75,7 @@ p code {
 
 .meta {
   color: #999;
-  font-family: monaco, consolas, monospace;
-  font-size: 12.5px;
+  font-family: georgia, "times new roman", times, serif;
 }
 
 .year {
@@ -99,7 +98,6 @@ p code {
   margin-bottom: 0;
 }
 .post .meta {
-  font-family: georgia, "times new roman", times, serif;
   font-size: 16px;
   margin: 1em 0 1.5em;
 }
@@ -121,10 +119,7 @@ p code {
 .notes ul { list-style: none; }
 .notes li { margin-bottom: 1em; }
 .notes li:last-child { margin-bottom: 0; }
-.notes .meta {
-  color: #999;
-  font-size: 12px;
-}
+.notes .meta { font-size: 12px; }
 
 .related {
   border: 0;
