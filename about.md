@@ -3,7 +3,7 @@ title: About Brett
 layout: post
 ---
 
-<img src="/images/me.jpg" alt="Brett Stimmerman"/>
+<img src="/images/me.png" alt="Photo of Brett Stimmerman"/>
 
 I've spent most of my life poking at computers to see how they react, and
 watching the internet grow up. If I'm not tinkering with computers I can be
