@@ -13,7 +13,25 @@
   <link rel="icon" href="images/favicon.png" />
   <link rel="alternate" type="application/atom+xml"
     href="http://feeds.feedburner.com/brettstimmerman"/>
-  
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+
+    _gaq.push(['_setAccount', 'UA-67688-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var doc = document,
+          ga  = doc.createElement('script'),
+          s;
+
+      ga.async = true;
+      ga.src = ('https:' == doc.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+      s = doc.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 <body>
   <div class="main">
@@ -21,15 +39,15 @@
       <h2 class="title">
         <a href="/" rel="home">Brett Stimmerman</a>
       </h2>
-      
+
       <div class="nav">
         <a href="/about.html">About</a>
         <a href="/archive.html">Archive</a>
       </div>
     </div>
-    
+
     {{ content }}
-    
+
     <div class="footer">
       <hr />
       <p>
@@ -38,24 +56,12 @@
         I sometimes <a href="http://twitter.com/bretts">tweet</a> and
         <a href="http://github.com/brettstimmerman">code</a>.
       </p>
-      
+
       <a href="http://feeds.feedburner.com/brettstimmerman"
          title="Subscribe to the Atom feed">
         <img class="ico rss" src="/images/rss.png" />
       </a>
     </div>
-    
   </div>
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [], s, ga;
-    _gaq.push(['_setAccount', 'UA-67688-6']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
 </body>
 </html>
