@@ -110,10 +110,16 @@ p code {
   padding: 2px;
 }
 .post .me {
-  border: 6px solid #e6e6e6;
+  background: #e6e6e6;
+  border: 0;
+  color: #555;
   float: none;
-  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 6px;
   margin: 0;
+  width: 607px;
+  height: 227px;
 }
 
 .notes {
