@@ -42,13 +42,16 @@ p code {
   padding: 0 0.2em;
 }
 
-.hd { position: relative; }
+.hd {
+  margin-bottom: 2.5em;
+  position: relative;
+}
 .hd .title { margin-right: 2em; }
 
 .main {
   margin: 0 auto;
-  padding: 2em 0 1.5em;
-  max-width: 40em;
+  padding: 1.5em 0;
+  max-width: 620px;
   min-width: 320px;
 }
 
@@ -66,7 +69,6 @@ p code {
 .title {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 1em;
 }
 .title a { color: #25a; }
 .title a:focus,
@@ -104,8 +106,14 @@ p code {
 .post img {
   border: 1px solid #999;
   float: right;
-  margin: 3px 0em 3px 1em;
+  margin: 3px 0 3px 1em;
   padding: 2px;
+}
+.post .me {
+  border: 6px solid #e6e6e6;
+  float: none;
+  padding: 0;
+  margin: 0;
 }
 
 .notes {

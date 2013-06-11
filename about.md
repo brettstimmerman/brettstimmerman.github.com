@@ -3,14 +3,15 @@ title: About Brett
 layout: post
 ---
 
-<img src="/images/me.png" alt="Photo of Brett Stimmerman"/>
+<img src="/images/me.png" alt="Photo of Brett Stimmerman" class="me"/>
 
-I've spent most of my life poking at computers to see how they react, and
-watching the internet grow up. If I'm not tinkering with computers I can be
-found brewing my own beer, wrenching on the pickup I'm restoring, plunking out a
-few chords on my guitar and marveling at the universe.
+My name is Brett Stimmerman. I'm a frontend engineer at [Twitter][1], and an
+organizer of [CSSConf][4]. I recently moved to San Francisco where I'm trying
+to find room for the home brewing equipment and the truck I'm restoring. Luckily
+the stereo, guitars and skateboards fit just fine.
 
-I sometimes say things [on Twitter][2] and share code [on GitHub][1].
+Aside from infrequent blog posts, I often say things on [Twitter][1] and share
+code on [GitHub][2].
 
 ### About the Site
 
@@ -18,8 +19,10 @@ This site is a collection of my writings about web development and technology.
 Posts written between 2005 and 2010 were gathered from a site I no longer
 maintain.
 
-The site is powered by [Jekyll](http://jekyllrb.com/) and
-[GitHub Pages](http://pages.github.com).
+These interwebs are made possible by the [Jekyll](http://jekyllrb.com/)-
+[GitHub Pages](http://pages.github.com) one-two punch.
 
-[1]: http://github.com/brettstimmerman
-[2]: http://twitter.com/bretts
+[1]: http://twitter.com/bretts
+[2]: http://github.com/brettstimmerman
+[3]: http://csslint.net
+[4]: http://cssconf.com
