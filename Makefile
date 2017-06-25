@@ -2,7 +2,7 @@ all: help
 
 # build - Re-builds the site.
 build: clean
-		@jekyll
+		@jekyll build
 
 # clean - Empties the _site directory.
 clean:
@@ -25,8 +25,7 @@ new:
 
 # serve - Starts the local Jekyll server.
 serve: clean
-		@jekyll --server --auto
-
+		@jekyll serve
 
 ## Default title for new posts.
 TITLE ?= New Article
@@ -36,8 +35,8 @@ FORMAT ?= "md"
 
 ## File name for new posts.
 ##
-## Post file names are of the form year-month-day-title.format. The title
-## portion of the file name is created by:
+## Post file names are of the form year-month-day-title.format.
+## The title portion of the file name is created by:
 ##
 ##   1. Converting the title given by TITLE to lowercase.
 ##   2. Replacing any space characters with dashes.

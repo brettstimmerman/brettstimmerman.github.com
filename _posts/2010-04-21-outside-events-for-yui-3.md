@@ -19,51 +19,51 @@ Outside Events is tiny weighing in at 475 bytes minified and gzipped. It's
 also hosted on the same CDN as YUI 3, so including it in your projects is
 simple and fast.
 
-{% highlight javascript %}
+```js
 YUI({
-    // Last Gallery Build of this module
-    gallery: 'gallery-2010.04.21-21-51'
+  // Last Gallery Build of this module
+  gallery: 'gallery-2010.04.21-21-51'
 }).use('gallery-outside-events', function(Y) {
-    // Outside events are ready to go!
+  // Outside events are ready to go!
 });
-{% endhighlight %}
+```
 
 Subscribe to outside events just like any other DOM event. Here is the
 pre-defined `clickoutside` event in action.
 
-{% highlight javascript %}
+```js
 Y.one('#dialog').on('clickoutside', function (e) {
-    this.addClass('hidden');
+  this.addClass('hidden');
 });
-{% endhighlight %}
+```
 
 Let's say you've defined a sweet new `swipe` event with the YUI 3
 [Synthetic DOM Event API][2]. Defining `swipeoutside` is easy.
 
-{% highlight javascript %}
+```js
 Y.Event.defineOutside('swipe');
-{% endhighlight %}
+```
 
 New outside events are named `<event>outside` by default. You can
 optionally give new outside events a custom name.
 
-{% highlight javascript %}
+```js
 Y.Event.defineOutside('swipe', 'outerswipe');
 Y.one('#foo').on('outerswipe', ... );
-{% endhighlight %}
+```
 
 Outside event handlers receive the originating DOM event object as an
 argument.
 
-{% highlight javascript %}
+```js
 Y.one('#foo').on('keyupoutside', function (e) {
-    var tag  = e.target.get('tagName'),
-        text = 'A keyup event occured on a ' + tag + ' element ' +
-            'outside of #foo';
+  var tag  = e.target.get('tagName'),
+      text = 'A keyup event occured on a ' + tag + ' element ' +
+             'outside of #foo';
 
-    alert(text);
+  console.log(text);
 });
-{% endhighlight %}
+```
 
 To learn more about Outside Events and view the list of pre-defined outside
 events, have a look at the [YUI Library page][1] and the [README][3], which

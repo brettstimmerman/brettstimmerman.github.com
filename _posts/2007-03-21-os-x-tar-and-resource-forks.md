@@ -25,9 +25,9 @@ like `--exclude='._*'`.
 
 After a bit of tinkering, I found a solution:
 
-{% highlight text %}
+```sh
 $ export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
-{% endhighlight %}
+```
 
 Then run tar and resource forks will be excluded.
 

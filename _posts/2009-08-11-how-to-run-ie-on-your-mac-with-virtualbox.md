@@ -8,7 +8,7 @@ notes:
             <a href="/2009/09/09/ie-vpc-images-now-with-wga.html">added <abbr
             title="Windows Genuine Advantage">WGA</abbr></a> to their IE App
             Compat images, making them more difficult to use in VirtualBox.
-            
+
     - date: 15 Oct 2011
       text: To this day, I still use some of the original VM images I created
             using this technique.
@@ -53,10 +53,10 @@ each image. Move the extracted `.vhd` files into these new folders.
 
 In Terminal, run the following for each image:
 
-{% highlight text %}
+```sh
 $ cd /Library/VirtualBox/<image>
 $ VBoxManage internalcommands sethduuid <image>.vhd
-{% endhighlight %}
+```
 
 This undocumented command will avoid UUID conflicts when creating multiple
 VMs. If you're only setting up one VM, you can skip this.
@@ -84,15 +84,15 @@ VirtualBox Guest Additions is beyond me.
 
 In Windows go to _Start > Run..._ and run the following:
 
-{% highlight text %}
+```
 D:\VBoxWindowsAdditions-x86.exe /extract /D=C:\Drivers
-{% endhighlight %}
+```
 
 Back to _Start > Run..._ and run:
 
-{% highlight text %}
+```
 devmgmt.msc
-{% endhighlight %}
+```
 
 In Device Manager, find _Network adapters > Ethernet controller_. Right click
 it, and select _Update Driver..._.
@@ -102,9 +102,9 @@ Select _Install from a list or specific location_ and click _Next_. Check the
 option _Include this location in the search_ and paste the following into the
 Location box:
 
-{% highlight text %}
+```
 C:\Drivers\x86\Network\AMD
-{% endhighlight %}
+```
 
 Alternatively, you can choose _Don't search ..._ and navigate to the location
 manually. Click _Finish_ and you should have a working network connection.

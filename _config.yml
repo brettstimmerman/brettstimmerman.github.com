@@ -1,3 +1,3 @@
-exclude: CNAME, Makefile, README.md
-markdown: rdiscount
-pygments: true
+exclude: [CNAME, Gemfile, Gemfile.lock, Makefile, README.md]
+highlighter: rouge
+markdown: kramdown

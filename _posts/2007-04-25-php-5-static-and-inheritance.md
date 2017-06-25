@@ -23,7 +23,7 @@ with respect to inheritance. Given a base class, `Animal`, and two derived
 classes, `Dog` and `Cat`, let's assume that all Animals have a color and that
 it defaults to black.
 
-{% highlight php %}
+```php
 <?php
 class Animal
 {
@@ -45,20 +45,20 @@ class Dog extends Animal
   protected static $color = 'Grey';
 }
 ?>
-{% endhighlight %}
+```
 
 Nice and simple, short and sweet. Animal has a color that defaults to black,
 and we've extended Animal with a Cat that defaults to brown and a Dog that
 defaults to grey. All fine and good. That is, until I want to ask the Dog or
 Cat classes what their default colors are.
 
-{% highlight php %}
+```php
 <?php
 echo Animal::getColor(); // Black
 echo Dog::getColor();    // Black (huh?)
 echo Cat::getColor();    // Black (what?)
 ?>
-{% endhighlight %}
+```
 
 It turns out that static methods are called within the scope of the class
 where the method is defined. In this case, `Animal`. So, even though `Dog` and

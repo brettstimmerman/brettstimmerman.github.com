@@ -3,11 +3,13 @@ title: Brett Stimmerman
 layout: default
 ---
 
-I'm a senior web developer at [Twitter][1]. In the past this site was a
-[collection of writings][3] about web development and technology.
+I'm a senior software engineer at [Square][1].
 
-I sometimes share things on [Twitter][1] and [GitHub][2].
+I sometimes share things on [GitHub][2] and [Twitter][3].
 
-[1]: http://twitter.com/bretts
-[2]: http://github.com/brettstimmerman
-[3]: /archive.html
+I used to [blog about stuff][4], but not so much anymore.
+
+[1]: https://squareup.com/developers
+[2]: https://github.com/brettstimmerman
+[3]: https://twitter.com/bretts
+[4]: /archive.html

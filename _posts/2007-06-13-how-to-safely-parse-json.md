@@ -17,7 +17,7 @@ created a polyfill called [JSON-js][2].
 
 Here's a simple example of using the native or JSON-js `JSON` object:
 
-{% highlight javascript %}
+```js
 var obj1 = { "foo": 42 };
 
 // Create a JSON string from an object.
@@ -25,7 +25,7 @@ var str = JSON.stringify(obj1);
 
 // Parse the JSON string into a new object.
 var obj2 = JSON.parse(str);
-{% endhighlight %}
+```
 
 [1]: http://crockford.com/
 [2]: https://github.com/douglascrockford/JSON-js
