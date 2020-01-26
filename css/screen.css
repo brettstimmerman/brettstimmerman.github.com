@@ -36,6 +36,10 @@ blockquote {
   padding: 0 1.2em;
 }
 
+ul { list-style: none; }
+li { margin-bottom: 1em; }
+li:last-child { margin-bottom: 0; }
+
 p code {
   background: #f8f8f8;
   border: 1px solid #ddd;
@@ -117,10 +121,7 @@ p code {
   padding: 0.5em;
   border-top: 1px solid #ddd;
 }
-.notes h3 { margin: 0 0 0.5em; }
-.notes ul { list-style: none; }
-.notes li { margin-bottom: 1em; }
-.notes li:last-child { margin-bottom: 0; }
+.notes h3 { margin: 0; }
 .notes .meta { font-size: 12px; }
 
 .related {
