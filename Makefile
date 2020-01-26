@@ -1,19 +1,20 @@
 all: help
 
-# build - Re-builds the site.
+# build | Generate the site
 build: clean
 		@jekyll build
 
-# clean - Empties the _site directory.
+# clean | Clean up an existing build
 clean:
 		@rm -rf _site/*
 
-# help - Displays help.
+# help | Display this help message
 help:
+		@echo "Usage: make TARGET\n"
 		@echo "Targets:"
-		@egrep "^# " Makefile | sed -e 's/#/ /'
+		@egrep "^# " Makefile | sed -e 's/#/ /' | column -s"|" -t
 
-# new TITLE=<title> - Creates a new post.
+# new [TITLE=title] | Create a new post
 new:
 		@echo "Creating post: $(TITLE)"
 		@echo "---" >> $(FILE)
@@ -23,12 +24,12 @@ new:
 		@echo "---" >> $(FILE)
 		@open $(FILE)
 
-# serve - Starts the local Jekyll server.
-serve: clean
+# start | Start the local server
+start: clean
 		@jekyll serve
 
 ## Default title for new posts.
-TITLE ?= New Article
+TITLE ?= "New Article"
 
 ## Default format for new posts.
 FORMAT ?= "md"
