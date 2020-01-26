@@ -59,12 +59,12 @@ p code {
 .main {
   margin: 0 auto;
   padding: 1.5em;
-  max-width: 620px;
-  min-width: 320px;
+  max-width: 30em;
+  min-width: 15em;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ p code {
 }
 
 .post .title {
-  font-size: 24px;
+  font-size: 2em;
   margin-bottom: 0;
 }
 .post > .meta {
@@ -116,8 +116,8 @@ p code {
 
 .notes {
   color: #666;
-  font-size: 13px;
-  margin: 3em 0;
+  font-size: 0.8em;
+  margin: 1.5em 0 3em;
   padding: 0.5em;
   border-top: 1px solid #ddd;
 }
@@ -127,7 +127,6 @@ p code {
 .related {
   border: 0;
   color: #333;
-  font-size: 16px;
   padding: 0;
 }
 .related li {
